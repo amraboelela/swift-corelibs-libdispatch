@@ -190,9 +190,6 @@ AC_ARG_WITH([swift-toolchain],
 		    armv7l*)
 			target_cpu="armv7"
 			;;
-		    armv6l*)
-			target_cpu="armv6"
-			;;
 			*)
             esac
 	    ;;
