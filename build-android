@@ -40,7 +40,7 @@ env \
 mkdir -p ${SWIFT_PATH}/swift-corelibs-libdispatch/src/.libs
 cp ${ANDROID_NDK_PATH}/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/arm-linux-androideabi/lib/armv7-a/libatomic.a ${SWIFT_PATH}/swift-corelibs-libdispatch/src/.libs
 
-sed -i~ "s/^LIBS = -L/LIBS = -latomic -L.\/.libs -L/" src/Makefile
+sed -i~ "s/^LIBS =  -L/LIBS = -latomic -L.\/.libs -L/" src/Makefile
 
 #exit
 
